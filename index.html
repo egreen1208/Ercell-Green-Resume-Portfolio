@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#07111f" />
+    <meta name="theme-color" content="#06110f" />
     <meta name="color-scheme" content="dark" />
     <meta
       name="description"
@@ -22,11 +22,551 @@
     />
     <meta name="twitter:card" content="summary" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./src/styles.css" />
     <title>Ercell Green | Software Developer & IT Professional</title>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="logo" href="#home" aria-label="Ercell Green home"><span>EG</span><i aria-hidden="true">_</i></a>
+        <button class="menu-button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        <div id="nav-links" class="nav-links">
+          <a href="#home" class="active"><small>01.</small> home</a>
+          <a href="#about"><small>02.</small> about</a>
+          <a href="#skills"><small>03.</small> skills</a>
+          <a href="#experience"><small>04.</small> experience</a>
+          <a href="#projects"><small>05.</small> projects</a>
+          <a href="#contact"><small>06.</small> contact</a>
+        </div>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section id="home" class="hero section-grid">
+        <div class="mountain-backdrop" aria-hidden="true"></div>
+        <div class="orb orb-one" aria-hidden="true"></div>
+        <div class="orb orb-two" aria-hidden="true"></div>
+        <div class="shell hero-content">
+          <div class="hero-copy reveal visible">
+            <h1><span>Hello, I’m</span> Ercell Green.</h1>
+            <p class="hero-role">Software Developer <i>/</i> Information Technology Professional</p>
+            <p class="hero-intro">Rooted in the mountains of Western North Carolina, I bring software development, DevOps, System Administration, and support experience together to solve practical technology problems from end to end.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">Explore my work <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+              <a class="button button-secondary" href="#contact">Let’s connect</a>
+            </div>
+            <div class="hero-meta">
+              <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg> Bryson City, NC</span>
+              <span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-4 3 4 3"></path><path d="m16 9 4 3-4 3"></path><path d="m14 5-4 14"></path></svg> Development · DevOps · System Administration · Support</span>
+            </div>
+          </div>
+          <div class="hero-visual reveal visible" aria-label="Professional portrait of Ercell Green">
+            <div class="portrait-frame">
+              <img alt="Ercell Green wearing a navy suit and smiling" width="1254" height="1254" fetchpriority="high" decoding="async" src="./ercell-green-profile.png">
+              <div class="portrait-scan" aria-hidden="true"></div>
+            </div>
+            <div class="circuit-lines" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span>Scroll</span><i></i></a>
+      </section>
+      <section id="about" class="section section-grid">
+        <div class="shell two-column">
+          <div class="section-heading reveal">
+            <p class="eyebrow">01 / About</p>
+            <h2>Grounded in service. <span>Built for the climb.</span></h2>
+          </div>
+          <div class="about-copy reveal">
+            <p class="lead">I’m a software developer and information technology professional whose experience spans application development, DevSecOps platforms, cloud identity, systems administration, endpoint management, infrastructure, automation, and user support.</p>
+            <p>This portfolio’s mountain character reflects my roots in Bryson City, North Carolina, surrounded by the ridgelines and mist of the Great Smoky Mountains.</p>
+            <p>My path has taken me through utility operations, federal technology, healthcare, and education. That range helps me see technology as a connected system: applications, infrastructure, security, business processes, and the people who depend on all of it.</p>
+            <p>Today at SECO Energy, I develop .NET web and desktop solutions for enterprise workflows. Earlier roles taught me how to administer CI/CD platforms, support complex environments, coordinate infrastructure projects, automate repetitive work, and communicate clearly when the stakes are high.</p>
+            <div class="principles">
+              <div>
+                <span>01</span>
+                <strong>End-to-end perspective</strong>
+                <small>From user need to reliable delivery.</small>
+              </div>
+              <div>
+                <span>02</span>
+                <strong>Service-centered</strong>
+                <small>Technology succeeds when people can trust it.</small>
+              </div>
+              <div>
+                <span>03</span>
+                <strong>Continuous improvement</strong>
+                <small>Automate, document, refine, and learn.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="section skills-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">02 / Skills</p>
+            <h2>A toolkit built across the <span>technology stack.</span></h2>
+            <p class="section-intro">Application development is the current focus, supported by years of work across platforms, infrastructure, security, automation, and service delivery.</p>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-card reveal" style="--delay: 0ms;">
+              <div class="skill-card-top">
+                <span class="skill-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-4 3 4 3"></path><path d="m16 9 4 3-4 3"></path><path d="m14 5-4 14"></path></svg></span>
+                <small>01</small>
+              </div>
+              <h3>Software Development</h3>
+              <ul>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>C#</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>.NET</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>ASP.NET Core</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Razor Pages</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>WPF</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>HTML</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>CSS</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>JavaScript</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal" style="--delay: 90ms;">
+              <div class="skill-card-top">
+                <span class="skill-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H7a5 5 0 1 1 1.7-9.7A6 6 0 0 1 20 12a3.5 3.5 0 0 1-2.5 7Z"></path></svg></span>
+                <small>02</small>
+              </div>
+              <h3>Cloud, Identity &amp; Data</h3>
+              <ul>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Microsoft Azure</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Azure Blob Storage</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Microsoft Entra ID</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Microsoft Graph</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>SQL Server</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Oracle</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>OpenID Connect</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>JWT &amp; Role-Based Access</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal" style="--delay: 180ms;">
+              <div class="skill-card-top">
+                <span class="skill-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"></rect><rect x="15" y="15" width="6" height="6" rx="1"></rect><path d="M9 6h3a3 3 0 0 1 3 3v6M12 18H9a3 3 0 0 1-3-3V9"></path></svg></span>
+                <small>03</small>
+              </div>
+              <h3>DevOps &amp; Automation</h3>
+              <ul>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>GitHub Enterprise</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Git</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Jenkins</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>SonarQube</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Jira</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Artifactory</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Power Apps</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Power Fx</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>SharePoint</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Power Automate</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>API &amp; Batch Scripting</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal" style="--delay: 270ms;">
+              <div class="skill-card-top">
+                <span class="skill-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="2"></rect><rect x="3" y="14" width="18" height="6" rx="2"></rect><path d="M7 7h.01M7 17h.01"></path></svg></span>
+                <small>04</small>
+              </div>
+              <h3>Systems &amp; Endpoints</h3>
+              <ul>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Windows</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>SCCM</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Microsoft Intune</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Active Directory</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Microsoft Exchange</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Endpoint Deployment</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Printers &amp; Mobile Devices</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal" style="--delay: 360ms;">
+              <div class="skill-card-top">
+                <span class="skill-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+                <small>05</small>
+              </div>
+              <h3>Infrastructure &amp; Security</h3>
+              <ul>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Network Support</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Identity &amp; Access</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Access Reviews</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Cybersecurity Audits</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Physical Security Systems</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Technical Documentation</li>
+              </ul>
+            </article>
+            <article class="skill-card reveal" style="--delay: 450ms;">
+              <div class="skill-card-top">
+                <span class="skill-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+                <small>06</small>
+              </div>
+              <h3>Service &amp; Delivery</h3>
+              <ul>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Application Support</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Incident Resolution</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Requirements Discovery</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Customer Support</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Vendor Coordination</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Scrum Support</li>
+                <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>Executive AV Support</li>
+              </ul>
+            </article>
+          </div>
+          <div class="credentials reveal" aria-label="Education, certificates, and recognition">
+            <article>
+              <p>Education</p>
+              <h3>AAS in Information Technology</h3>
+              <span>Southwestern Community College · May 2020 · GPA 3.88</span>
+            </article>
+            <article>
+              <p>Certificates</p>
+              <h3>Professional Technology Foundations</h3>
+              <span>GitHub Foundations · User Support · Network Operation System</span>
+            </article>
+            <article>
+              <p>Recognition</p>
+              <h3>Service &amp; Performance</h3>
+              <span>Quarterly performance awards · USDA Staff of the Month recognition</span>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="experience" class="section section-grid">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">03 / Experience</p>
+            <h2>Experience across <span>industries &amp; disciplines.</span></h2>
+            <p class="section-intro">A career built through software delivery, DevSecOps administration, enterprise support, infrastructure projects, healthcare technology, and education.</p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-marker">
+                <span>01</span>
+              </div>
+              <div class="timeline-date">
+                March 24, 2026 — Present
+                <b>Current</b>
+              </div>
+              <div class="timeline-content">
+                <p class="company">SECO Energy</p>
+                <h3>Junior Software Developer</h3>
+                <p class="job-summary">Developing and supporting internal software that improves enterprise workflows, information access, and day-to-day productivity.</p>
+                <ul>
+                  <li>Develop internal web and desktop applications using C#, .NET, ASP.NET Core, Razor Pages, WPF, SQL, HTML, CSS, and JavaScript.</li>
+                  <li>Contribute across the application lifecycle, from requirements and workflow design through testing, release support, and production troubleshooting.</li>
+                  <li>Build database-backed capabilities for enterprise warehouse operations, reporting, document management, and application-support workflows.</li>
+                  <li>Integrate Microsoft Entra ID and Microsoft Graph for identity, user synchronization, application roles, and server-side access validation.</li>
+                  <li>Implement Azure Blob Storage workflows for business documents, images, signatures, and application content.</li>
+                  <li>Create desktop productivity tools for structured documentation, visual workflows, media capture, PDF operations, OCR, signatures, and exports.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-marker">
+                <span>02</span>
+              </div>
+              <div class="timeline-date">Prior Role</div>
+              <div class="timeline-content">
+                <p class="company">SECO Energy</p>
+                <h3>IT Support Specialist</h3>
+                <p class="job-summary">Supported users, endpoints, collaboration systems, and high-visibility technology needs in an enterprise environment.</p>
+                <ul>
+                  <li>Supported endpoint deployment and management with SCCM and Microsoft Intune.</li>
+                  <li>Administered user and device needs across Active Directory and Microsoft Exchange environments.</li>
+                  <li>Used automation to streamline repeatable support and administration tasks.</li>
+                  <li>Provided executive conference and meeting technology support.</li>
+                  <li>Diagnosed hardware, software, account, and connectivity issues with a service-focused approach.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-marker">
+                <span>03</span>
+              </div>
+              <div class="timeline-date">Earlier Experience</div>
+              <div class="timeline-content">
+                <p class="company">U.S. Forest Service</p>
+                <h3>IT Specialist — CI/CD Tool Administrator</h3>
+                <p class="job-summary">Administered enterprise DevSecOps platforms and helped development teams operate reliable, secure CI/CD workflows.</p>
+                <ul>
+                  <li>Administered GitHub Enterprise, Jenkins, SonarQube, Jira, and Artifactory for developers, project managers, system owners, and application teams.</li>
+                  <li>Configured Jenkins pipelines and SonarQube projects while troubleshooting build, integration, and code-quality issues.</li>
+                  <li>Managed accounts, permissions, access requests, and periodic cybersecurity audits across CI/CD platforms.</li>
+                  <li>Automated recurring administration with GitHub APIs, batch scripts, and Power Automate, including ServiceNow incident workflows.</li>
+                  <li>Configured Jira projects, ticket workflows, Scrum boards, and ServiceNow dashboards, and produced platform documentation and best practices.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-marker">
+                <span>04</span>
+              </div>
+              <div class="timeline-date">Earlier Experience</div>
+              <div class="timeline-content">
+                <p class="company">U.S. Forest Service — Oconaluftee Job Corps Center</p>
+                <h3>IT Specialist</h3>
+                <p class="job-summary">Supported campus technology and infrastructure for more than 200 staff and students across 18 buildings.</p>
+                <ul>
+                  <li>Maintained Windows computers, printers, scanners, phones, user accounts, classroom systems, and network-connected equipment.</li>
+                  <li>Diagnosed network, hardware, software, and account issues while following federal technology and cybersecurity policies.</li>
+                  <li>Oversaw fiber, network-infrastructure, and physical-security camera upgrades.</li>
+                  <li>Installed network cabling and drops in-house and supported upgrades to printers, IP phones, staff radios, and endpoint fleets.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-marker">
+                <span>05</span>
+              </div>
+              <div class="timeline-date">Earlier Experience</div>
+              <div class="timeline-content">
+                <p class="company">Harris Regional &amp; Swain County Hospitals</p>
+                <h3>Information Technology Technician — Help Desk</h3>
+                <p class="job-summary">Supported clinical and administrative technology across multiple hospital facilities in a high-service environment.</p>
+                <ul>
+                  <li>Provided support for computers, applications, network devices, medical equipment, and end-user issues.</li>
+                  <li>Supported a refresh of more than 400 PCs and a radiology PACS upgrade involving servers, software, networking, and approximately 120 workstations.</li>
+                  <li>Led deployment of the hospitals’ first telemedicine robot fleet and supported executive conference-room technology.</li>
+                  <li>Assisted with medical cart, printer-fleet, and enterprise hardware deployments.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <div class="timeline-marker">
+                <span>06</span>
+              </div>
+              <div class="timeline-date">Earlier Experience</div>
+              <div class="timeline-content">
+                <p class="company">Education Support</p>
+                <h3>Online Facilitator</h3>
+                <p class="job-summary">Combined student support, classroom technology, and clear communication in an online learning environment.</p>
+                <ul>
+                  <li>Supported students enrolled in online high school and college courses.</li>
+                  <li>Maintained classroom technology and resolved access and system issues.</li>
+                  <li>Communicated student progress with counselors, parents, and teachers.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="section projects-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">04 / Projects</p>
+            <h2>Practical problems. <span>Purposeful solutions.</span></h2>
+            <p class="section-intro">Internal applications, workflow improvements, documentation tools, emerging technology research, and room systems built around the people who use them.</p>
+          </div>
+          <div class="project-list">
+            <article class="project-card reveal">
+              <div class="project-number">01</div>
+              <div class="project-body">
+                <p class="project-type">Enterprise applications</p>
+                <h3>SECO Systems Web Application</h3>
+                <p class="project-status">Active development</p>
+                <p>Designed and developed an internal application that brings business-system information, documentation, training, and usage insights into organized application hubs. The architecture centers on four pillars: Governance, Documentation, Training &amp; Adoption, and Optimization &amp; Analytics.</p>
+                <div class="tags">
+                  <span>Full-Stack Development</span>
+                  <span>Content Management</span>
+                  <span>Authorization</span>
+                  <span>Responsive Design</span>
+                </div>
+                <details class="project-details">
+                  <summary>Explore contributions<span class="sr-only"> to SECO Systems Web Application</span></summary>
+                  <ul>
+                    <li>Designed the information architecture, application hubs, framework landing pages, navigation, and responsive layouts.</li>
+                    <li>Built editable articles, document libraries, reusable content containers, and section controls.</li>
+                    <li>Improved document metadata and file-format identification for uploaded PDF, DOCX, XLSX, and PNG files.</li>
+                    <li>Developed application-managed permissions, administration, role preview, identity matching, and administrator recovery.</li>
+                    <li>Reorganized existing reports, surveys, SOPs, API documentation, and business-analysis content while preserving those resources; tested desktop and mobile layouts.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="project-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H7a5 5 0 1 1 1.7-9.7A6 6 0 0 1 20 12a3.5 3.5 0 0 1-2.5 7Z"></path></svg>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-number">02</div>
+              <div class="project-body">
+                <p class="project-type">Warehouse operations</p>
+                <h3>WOMS Web Application</h3>
+                <p class="project-status">Active development</p>
+                <p>Developed the Warehouse Operations Management System to centralize requests, approvals, fulfillment, inventory processes, and operational tracking. The application addresses manual handoffs, inconsistent routing, limited visibility, and difficulty identifying requested materials.</p>
+                <div class="tags">
+                  <span>Full-Stack Development</span>
+                  <span>SQL</span>
+                  <span>Workflow Automation</span>
+                  <span>Systems Integration</span>
+                </div>
+                <details class="project-details">
+                  <summary>Explore contributions<span class="sr-only"> to WOMS Web Application</span></summary>
+                  <ul>
+                    <li>Designed requester, warehouse, fulfillment, assignment, supervisor-routing, and approval workflows.</li>
+                    <li>Built emergency and after-hours request processes and administrative workflow configuration.</li>
+                    <li>Added catalog lookup, item photos, catalog media, and thumbnails within request line items.</li>
+                    <li>Connected inventory charge and fulfillment processes with existing business systems; supported database tables, views, procedures, queries, seed data, and application interfaces.</li>
+                    <li>Documented implementation scope, business value, development costs, operating expenses, and release preparation.</li>
+                    <li>Prepared the complete Phase 1 implementation for official user release, subject to UAT and deployment approval.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="project-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"></rect><rect x="15" y="15" width="6" height="6" rx="1"></rect><path d="M9 6h3a3 3 0 0 1 3 3v6M12 18H9a3 3 0 0 1-3-3V9"></path></svg>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-number">03</div>
+              <div class="project-body">
+                <p class="project-type">Asset management</p>
+                <h3>IT Equipment Manager</h3>
+                <p class="project-status">Active development</p>
+                <p>Designed a Power Apps application that helps Service Desk personnel locate and maintain employee equipment assignments. A master-detail interface pairs an employee list with the selected user’s equipment records, backed by SharePoint.</p>
+                <div class="tags">
+                  <span>Power Apps</span>
+                  <span>SharePoint</span>
+                  <span>Power Fx</span>
+                  <span>Asset Tracking</span>
+                </div>
+                <details class="project-details">
+                  <summary>Explore contributions<span class="sr-only"> to IT Equipment Manager</span></summary>
+                  <ul>
+                    <li>Built employee and assigned-user lookup with search and filtering.</li>
+                    <li>Organized computer names, serial numbers, and asset titles within equipment records.</li>
+                    <li>Developed user-to-equipment relationships, assignment tracking, and reassignment workflows.</li>
+                    <li>Used Power Fx formulas and SharePoint integration to support asset-assignment logic and improve the interface.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="project-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="2"></rect><rect x="3" y="14" width="18" height="6" rx="2"></rect><path d="M7 7h.01M7 17h.01"></path></svg>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-number">04</div>
+              <div class="project-body">
+                <p class="project-type">Desktop productivity · SOP Tool</p>
+                <h3>SECO Process Studio</h3>
+                <p class="project-status">Active development &amp; deployment preparation</p>
+                <p>Developed a desktop application for creating standard operating procedures, flow charts, annotated screenshots, and PDF documentation. Connected editing tools let users move screenshots into SOPs and flow charts and export their work in multiple formats.</p>
+                <div class="tags">
+                  <span>Desktop Development</span>
+                  <span>Visual Editing</span>
+                  <span>Document Generation</span>
+                  <span>Windows Deployment</span>
+                </div>
+                <details class="project-details">
+                  <summary>Explore contributions<span class="sr-only"> to SECO Process Studio</span></summary>
+                  <ul>
+                    <li>Built the Flow Chart Builder, SOP Editor, PDF Studio, and Screenshot Editor.</li>
+                    <li>Added editable flow-chart project import and export, plus PNG, PDF, SVG, and HTML export.</li>
+                    <li>Created image annotation and shape tools for arrows, lines, rectangles, circles, and text, with font and alignment controls.</li>
+                    <li>Supported dark mode, responsive and collapsible editor panels, and persistent project settings.</li>
+                    <li>Prepared self-contained Windows deployment and user-specific folders for documents, exports, and application data.</li>
+                    <li>Worked on demonstrations, deployment planning, and adoption by other departments.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="project-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 9-4 3 4 3"></path><path d="m16 9 4 3-4 3"></path><path d="m14 5-4 14"></path></svg>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-number">05</div>
+              <div class="project-body">
+                <p class="project-type">Research &amp; feasibility</p>
+                <h3>AI Investigation</h3>
+                <p class="project-status">Exploratory project</p>
+                <p>Investigating how language-model technology could provide practical value in an internal business environment. The work focuses on feasibility, information protection, infrastructure, and governance, with a limited proof of concept planned before considering broader adoption.</p>
+                <div class="tags">
+                  <span>AI Evaluation</span>
+                  <span>Feasibility Research</span>
+                  <span>Security Planning</span>
+                  <span>Governance</span>
+                </div>
+                <details class="project-details">
+                  <summary>Explore contributions<span class="sr-only"> to AI Investigation</span></summary>
+                  <ul>
+                    <li>Evaluate employee use cases and whether internal infrastructure can support controlled experimentation.</li>
+                    <li>Identify sensitive-information protection, security, access-control, and network requirements.</li>
+                    <li>Assess how an experimental environment could remain separate from production systems.</li>
+                    <li>Define governance, monitoring, and approval needs before broader adoption.</li>
+                    <li>Plan a limited proof of concept, document requirements, test clearly defined use cases, and use the results to assess whether a larger implementation is justified.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="project-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-number">06</div>
+              <div class="project-body">
+                <p class="project-type">Audiovisual integration</p>
+                <h3>Conference Room Technology &amp; MPR Control System</h3>
+                <p class="project-status">Completed implementation · ongoing support</p>
+                <p>Configured conference-room technology with a focus on the Multi Purpose Room, bringing presentation, projector, PTZ camera, and audio controls into one iPad interface. The goal was to make meetings easier to run for employees without specialized audiovisual training.</p>
+                <div class="tags">
+                  <span>AV Integration</span>
+                  <span>iPad Control Interface</span>
+                  <span>PTZ Cameras</span>
+                  <span>User Support</span>
+                </div>
+                <details class="project-details">
+                  <summary>Explore contributions<span class="sr-only"> to Conference Room Technology &amp; MPR Control System</span></summary>
+                  <ul>
+                    <li>Configured HDMI input selection and switching between connected presentation devices.</li>
+                    <li>Connected and tested projector power, operation, and display behavior.</li>
+                    <li>Configured PTZ camera pan, tilt, zoom, and positioning controls.</li>
+                    <li>Tuned room sound, multiple microphones, volume and mute controls, and audio coordination between speakers and meeting systems.</li>
+                    <li>Simplified room startup and shutdown; provided user guidance on the centralized controls.</li>
+                    <li>Continue to support boardroom and MPR meeting setup, presentations, microphones, audio, and projectors.</li>
+                  </ul>
+                </details>
+              </div>
+              <div class="project-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section contact-section section-grid">
+        <div class="shell contact-wrap reveal">
+          <div>
+            <p class="eyebrow">05 / Contact</p>
+            <h2>Let’s build something <span>useful.</span></h2>
+            <p>Interested in connecting about software development, enterprise technology, or a worthwhile project? I’d be glad to hear from you.</p>
+          </div>
+          <div class="contact-links">
+              <a href="mailto:egreen1208@gmail.com">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>
+                  <span>egreen1208@gmail.com</span>
+              </a>
+              <a href="tel:+18287365562">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.69 2.79a2 2 0 0 1-.45 2.11L8.09 9.89a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.89.34 1.83.57 2.79.69A2 2 0 0 1 22 16.92Z"></path></svg>
+                  <span>828-736-5562</span>
+              </a>
+              <a href="https://www.linkedin.com/in/ercell-green-473b53156/" target="_blank" rel="noreferrer"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg><span>LinkedIn profile</span><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a>
+              <a href="https://github.com/egreen1208" target="_blank" rel="noreferrer">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-1.5 6-6a4.6 4.6 0 0 0-1.2-3.2A4.2 4.2 0 0 0 18.7 2S17.7 1.7 15 3.5a12 12 0 0 0-6 0C6.3 1.7 5.3 2 5.3 2a4.2 4.2 0 0 0-.1 3.3A4.6 4.6 0 0 0 4 8.5c0 4.5 3 6 6 6a4.8 4.8 0 0 0-1 3.5v4"></path></svg>
+                  <span>GitHub profile</span>
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+              </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="shell footer-inner">
+        <a class="logo" href="#home"><span>EG</span><i>_</i></a>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

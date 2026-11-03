@@ -1,88 +1,42 @@
 # Ercell Green — Developer Portfolio
 
-A polished, responsive portfolio built with React and Vite. It presents Ercell Green's broad experience across software development, DevOps, infrastructure, identity, automation, and technology support. Its Great Smoky Mountains-inspired design reflects Ercell's Bryson City, North Carolina roots, uses only portfolio-safe assets, and is configured for free hosting on GitHub Pages.
+A responsive portfolio made with plain HTML, CSS, and JavaScript. The green-and-gold design reflects Ercell's Great Smoky Mountains roots. Vite is used only for local preview and production packaging; the site has no React or other browser framework.
 
-## Before publishing
+## Edit the site
 
-Open `src/portfolioData.js` and update:
+- `index.html`: all page content, projects, skills, experience, contact links, and SVG icons.
+- `src/styles.css`: colors, layout, responsive styles, and animations.
+- `src/main.js`: mobile menu, active navigation, scroll reveals, and copyright year.
+- `public/`: profile portrait, mountain artwork, and favicon.
 
-- `email`, `linkedin`, and `github`
-- Each clearly marked project placeholder with public-safe details
-- Project technologies if needed
+Project contributions use native HTML `<details>` elements. The page content and project details remain available with JavaScript disabled.
 
-Do not include confidential system names, business data, screenshots, source code, or internal URLs.
+The project section includes SECO Systems, WOMS, IT Equipment Manager, SECO Process Studio, AI Investigation, and conference-room technology. Update their summaries and statuses directly in `index.html` as work progresses.
 
 ## Run locally
 
-1. Install [Node.js](https://nodejs.org/) 20 or newer.
-2. Open a terminal in this folder.
-3. Run:
+Use Node.js 22.12 or newer, then run:
 
-   ```bash
-   npm install
-   npm run dev
-   ```
+```bash
+npm ci
+npm run dev
+```
 
-4. Open the local address shown in the terminal.
-
-Create a production build with:
+Open the local address shown in the terminal. To build and preview the finished static site:
 
 ```bash
 npm run build
+npm run preview
 ```
 
-The finished static site will be in `dist/`.
+The finished site is in `dist/`. Any static web host can serve that folder.
 
-## Upload using the GitHub website
+## Publish to GitHub Pages
 
-1. Download and extract `ercell-green-portfolio-source.zip`.
-2. On GitHub, create a new empty repository named `ercell-green-portfolio`.
-3. Do **not** add a README, `.gitignore`, or license while creating it; those choices can conflict with the prepared files.
-4. In the empty repository, choose **uploading an existing file**.
-5. Drag all extracted contents into the upload area, including the `.github`, `public`, and `src` folders.
-6. Enter a commit message such as `Create portfolio site`, then choose **Commit changes**.
-7. Open **Settings → Pages** and set **Source** to **GitHub Actions**.
-8. Open **Actions** and wait for **Deploy portfolio to GitHub Pages** to finish.
+The workflow in `.github/workflows/main.yml` installs dependencies, builds the site, and publishes `dist/` when changes are pushed to `main`. In the repository's **Settings → Pages**, select **GitHub Actions** as the source. You can also run the workflow manually from **Actions**.
 
-The published address will normally be:
+## Before publishing
 
-`https://YOUR-USERNAME.github.io/ercell-green-portfolio/`
+Update the contact links in `index.html` with your public email and GitHub profile. Keep project descriptions suitable for public sharing, and exclude confidential business data, screenshots, source code, and internal URLs.
 
-## Upload using Git
-
-The included workflow at `.github/workflows/deploy.yml` builds and publishes the site automatically.
-
-1. Create a new empty repository on GitHub, such as `ercell-green-portfolio`.
-2. In this project folder, run:
-
-   ```bash
-   git init
-   git add .
-   git commit -m "Create portfolio site"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/ercell-green-portfolio.git
-   git push -u origin main
-   ```
-
-3. On GitHub, open **Settings → Pages**.
-4. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-5. Open the repository's **Actions** tab and wait for “Deploy portfolio to GitHub Pages” to finish.
-6. Your URL will be:
-
-   `https://YOUR-USERNAME.github.io/ercell-green-portfolio/`
-
-Future pushes to `main` will redeploy automatically.
-
-## Customize the design
-
-- Main page layout: `src/App.jsx`
-- Text, skills, experience, and project data: `src/portfolioData.js`
-- Colors and responsive styles: `src/styles.css`
-- Hero profile portrait: `public/ercell-green-profile.png`
-- Smoky Mountains hero artwork: `public/smoky-mountains-hero.png`
-- Search/social metadata: `index.html`
-- Browser icon: `public/favicon.svg`
-
-## Accessibility and SEO
-
-The site includes semantic sections, keyboard focus styles, a skip link, reduced-motion support, responsive layouts, descriptive metadata, and social sharing basics. Add a canonical URL and social preview image in `index.html` after the final GitHub Pages URL is known.
+The site includes semantic sections, keyboard focus styles, a skip link, reduced-motion support, responsive layouts, and social metadata. Add a canonical URL and social preview image after the final published URL is known.
