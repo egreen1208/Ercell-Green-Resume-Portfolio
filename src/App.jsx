@@ -60,6 +60,10 @@ function SectionHeading({ eyebrow, title, intro }) {
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
+  const mountainImage = new URL(
+    `${import.meta.env.BASE_URL}smoky-mountains-hero.png`,
+    document.baseURI,
+  ).href
 
   useEffect(() => {
     const sections = document.querySelectorAll('main section[id]')
@@ -90,7 +94,7 @@ function App() {
         <section id="home" className="hero section-grid">
           <div
             className="mountain-backdrop"
-            style={{ '--mountain-image': `url(${import.meta.env.BASE_URL}smoky-mountains-hero.png)` }}
+            style={{ '--mountain-image': `url("${mountainImage}")` }}
             aria-hidden="true"
           />
           <div className="orb orb-one" aria-hidden="true" />
